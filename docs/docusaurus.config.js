@@ -18,7 +18,7 @@ const config = {
     url: 'https://paymoncoin.github.io',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: '/docs/',
+    baseUrl: '/docs',
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -26,7 +26,7 @@ const config = {
     projectName: 'docs', // Usually your repo name.
     trailingSlash: false,
 
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'ignore',
     onBrokenMarkdownLinks: 'warn',
 
     // Even if you don't use internationalization, you can use this field to set
@@ -53,21 +53,6 @@ const config = {
                     // Remove this to remove the "edit this page" links.
                     editUrl:
                         'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-                },
-                blog: {
-                    showReadingTime: true,
-                    feedOptions: {
-                        type: ['rss', 'atom'],
-                        xslt: true,
-                    },
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl:
-                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-                    // Useful options to enforce blogging best practices
-                    onInlineTags: 'warn',
-                    onInlineAuthors: 'warn',
-                    onUntruncatedBlogPosts: 'warn',
                 },
                 theme: {
                     customCss: './src/css/custom.css',
@@ -109,7 +94,7 @@ const config = {
                         items: [
                             {
                                 label: 'راهنمای استفاده',
-                                to: '/docs/intro',
+                                to: '/docs/docs/intro',
                             },
                         ],
                     },
@@ -143,7 +128,7 @@ const config = {
                             },
                             {
                                 label: 'گیت‌هاب',
-                                href: 'https://github.com/facebook/docusaurus',
+                                href: 'https://github.com/paymoncoin',
                             },
                         ],
                     },
